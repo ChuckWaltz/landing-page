@@ -1,19 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
-import { NgwWowModule } from 'ngx-wow';
+import { NgwWowModule } from "ngx-wow";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    NgwWowModule.forRoot(),
-    BrowserModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
