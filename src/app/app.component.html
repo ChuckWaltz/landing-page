@@ -1,0 +1,408 @@
+<div class="container-fluid">
+  <div class="row wow fadeIn" id="header">
+    <div id="header-background"></div>
+    <div id="header-background-swap"></div>
+
+    <div class="col" id="nav">
+      <a href=""><img src="assets/W Logo.svg" class="wow flipInY"/></a>
+
+      <div id="nav-buttons-right">
+        <ul>
+          <a (click)="scrollTo('#about-section')">
+            <li class="wow slideInRight" data-wow-delay="6.5s">About</li>
+          </a>
+          <a (click)="scrollTo('#projects-section')">
+            <li class="wow slideInRight" data-wow-delay="6.75s">Projects</li>
+          </a>
+          <a (click)="scrollTo('#contact-section')">
+            <li class="wow slideInRight" data-wow-delay="7s">Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <section id="header-content">
+      <h1>
+        <section class="wow fadeIn" data-wow-delay="1s">Hello.</section>
+        <section class="wow fadeIn" data-wow-delay="2.5s">My Name Is</section>
+        <section class="wow fadeIn" data-wow-delay="3s">Chuck Waltz.</section>
+      </h1>
+
+      <h2>
+        <section class="wow fadeInUp" data-wow-delay="4.25s">
+          I like to design and develop websites.
+        </section>
+      </h2>
+
+      <button
+        id="header-button"
+        class="wow bounceIn"
+        data-wow-delay="6s"
+        data-wow-duration="0.75s"
+        (click)="scrollTo('#about-section')"
+      >
+        More About Me
+      </button>
+    </section>
+  </div>
+
+  <div class="row about-section" id="about-section">
+    <svg
+      id="about-top-poly"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      width="100%"
+      height="8vw"
+    >
+      <polygon points="0,100  100,0  100,100" />
+    </svg>
+
+    <div class="col-12 col-xl-7" id="about-section-content-left">
+      <h1>
+        <section
+          class="wow slideInLeft"
+          data-wow-delay="0s"
+          data-wow-duration="0.75s"
+        >
+          Design.
+        </section>
+        <section
+          class="wow slideInLeft"
+          data-wow-delay="0.25s"
+          data-wow-duration="0.75s"
+        >
+          Development.
+        </section>
+        <section
+          class="wow slideInLeft"
+          data-wow-delay="0.5s"
+          data-wow-duration="0.75s"
+        >
+          Handcrafted.
+        </section>
+        <section
+          class="wow slideInLeft"
+          data-wow-delay="0.75s"
+          data-wow-duration="0.75s"
+        >
+          Responsive.
+        </section>
+      </h1>
+    </div>
+
+    <div
+      class="col-12 col-xl-5 wow fadeIn"
+      id="about-section-content-right"
+      data-wow-delay="1.5s"
+      data-wow-duration="3s"
+      data-wow-offset="100"
+    >
+      <h2>
+        I am a Digital Designer &amp; Developer focusing on Responsive Web
+        Design &amp; Web Development.
+      </h2>
+      <div class="container" id="icons-container">
+        <div class="row">
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="1.75s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/HTML5_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="1.95s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/CSS3_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="2.15s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/JS_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="2.35s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/jQuery_logo_final.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="2.55s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/Angular_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="2.75s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/Bootstrap_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="2.95s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/React_logo_final.png" />
+          </div>
+          <div
+            class="col wow bounceIn"
+            data-wow-delay="3.15s"
+            data-wow-duration="0.65s"
+          >
+            <img class="img-fluid" src="assets/MaterialUI_logo_final.png" />
+          </div>
+        </div>
+      </div>
+      <h3>
+        I started teaching myself how to create websites in 2016. Frustrated
+        with my current career path, I was inspired to do bigger and better
+        things with my professional life. I am currently working full-time as a
+        software developer in Cary, North Carolina.
+        <br /><br />
+        Born and raised in Colorado, I relocated to Raleigh, North Carolina in
+        2018 with my wife, 2 dogs and 2 cats who I love more than anything.
+        <br /><br />
+        When I'm not creating websites, I like to spend as much time as I can
+        with my family, who is always supportive and motivating me to do my
+        best. I am also a gaming and technology enthusiast.
+        <br /><br />
+        You can stalk me on
+        <a href="http://www.twitter.com/chuckwaltz" target="_blank">Twitter</a>,
+        hit me up on
+        <a href="http://www.linkedin.com/in/chuck-waltz" target="_blank"
+          >LinkedIn</a
+        >, check out my
+        <a href="https://github.com/ChuckWaltz" target="_blank">GitHub</a>, take
+        a look at my
+        <a
+          href="http://www.artstation.com/chuckwaltz/albums/all"
+          target="_blank"
+          >ArtStation</a
+        >, or just drop me an <a href="mailto:chuckwaltz@gmail.com">E-Mail</a>.
+      </h3>
+      <br />
+      <button
+        id="about-button"
+        class="wow bounceIn"
+        data-wow-delay="2s"
+        data-wow-duration="0.75s"
+        (click)="scrollTo('#projects-section')"
+      >
+        Selected Projects
+      </button>
+    </div>
+
+    <svg
+      id="about-bottom-poly"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      width="100%"
+      height="8vw"
+    >
+      <polygon points="0,0  0,100  100,100" />
+    </svg>
+  </div>
+
+  <div class="row" id="projects-section">
+    <div class="" id="projects-section-header">
+      <h1>
+        <section
+          class="wow slideInLeft"
+          data-wow-duration="0.75s"
+          data-wow-delay="0.25s"
+        >
+          Projects.
+        </section>
+      </h1>
+    </div>
+
+    <div class="container-fluid" id="project-tiles-container">
+      <div class="row">
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner  wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.8s"
+          >
+            <div class="project-tile-title">
+              <h4>artist's choice.</h4>
+              <p style="font-size: 14px;">
+                (react/material-ui/firebase/rest/scss)
+              </p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/artists-choice-thumbnail.jpg)"
+              onclick="window.open('http://artists-choice.firebaseapp.com');"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner  wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="1s"
+          >
+            <div class="project-tile-title">
+              <h4>recipe search engine.</h4>
+              <p style="font-size: 14px;">(react/material-ui/firebase/rest)</p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/what-to-make-thumbnail.jpg)"
+              onclick="window.open('http://what-to-make.firebaseapp.com');"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner  wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="1.2s"
+          >
+            <div class="project-tile-title">
+              <h4>gaming blog.</h4>
+              <p style="font-size: 14px;">(angular/less/bootstrap/js/jquery)</p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/gaming-blog-thumbnail.jpg)"
+              onclick="window.open('http://www.chuckwaltz.com/projects/gaming-blog');"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="1.4s"
+          >
+            <div class="project-tile-title">
+              <h4>
+                raleigh beer garden.
+                <br />
+                reimagined.
+              </h4>
+              <p style="font-size: 14px;">(angular/less/bootstrap/js/jquery)</p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/rbg-thumbnail.jpg)"
+              onclick="window.open('http://www.chuckwaltz.com/projects/restaurant-bar');"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="1.6s"
+          >
+            <div class="project-tile-title">
+              <h4>
+                clothing store.
+              </h4>
+              <p style="font-size: 14px;">(angular/less/bootstrap/js/jquery)</p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/clothing-store-thumbnail.jpg)"
+              onclick="window.open('http://www.chuckwaltz.com/projects/clothing-store');"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 project-tile-outer">
+          <div
+            class="project-tile-inner wow fadeIn"
+            data-wow-duration="0.5s"
+            data-wow-delay="1.8s"
+          >
+            <div class="project-tile-title">
+              <h4>
+                coffee shop.
+              </h4>
+              <p style="font-size: 14px;">(html/less/bootstrap/js/jquery)</p>
+            </div>
+
+            <div
+              class="project-tile-overlay"
+              style="background-image: url(assets/coffee-shop-thumbnail.jpg)"
+              onclick="window.open('http://www.chuckwaltz.com/projects/coffee-shop');"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="" id="projects-section-disclaimer">
+        <h5>
+          <section
+            class="wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="1.5s"
+          >
+            *Content pulled from various online sources.
+          </section>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="row"
+    id="contact-section"
+    style="background-image: url(assets/raleigh_night_glitch.jpg)"
+  >
+    <svg
+      id="contact-top-poly"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      width="100%"
+      height="8vw"
+    >
+      <polygon points="0,100  100,0  100,100" />
+    </svg>
+
+    <section
+      class="col-12 col-sm-9 col-md-8 col-lg-8 col-xl-5"
+      id="contact-content"
+    >
+      <h1>
+        <section class="wow fadeIn">Get In Touch.</section>
+      </h1>
+
+      <h3>
+        <section class="wow fadeInUp" data-wow-delay="0.5s">
+          Hit me up if you want to discuss your next project or if you just want
+          to chat.
+        </section>
+      </h3>
+
+      <a href="mailto:chuckwaltz@gmail.com"
+        ><button
+          id="contact-button"
+          class="wow bounceIn"
+          data-wow-delay="1.25s"
+          data-wow-duration="0.75s"
+        >
+          Send Me A Message
+        </button></a
+      >
+    </section>
+  </div>
+</div>
