@@ -68,7 +68,7 @@ export class AppComponent {
       this.headerBG.style.opacity = "1";
       await this.sleep(this.randomNumber(250, 5000));
       this.glitch();
-    }, this.randomNumber(100, 800));
+    }, this.randomNumber(100, 600));
   }
 
   randomNumber(min, max) {
