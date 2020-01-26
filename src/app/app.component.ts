@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 
 import { NgwWowService } from "ngx-wow";
 
@@ -11,15 +11,13 @@ import { I18nSelectPipe } from "@angular/common";
   styleUrls: ["./app.component.less"]
 })
 export class AppComponent {
-  private sub;
-
   headerBG: any;
   headerBGswap: any;
 
-  widthThreshold = 1200;
+  widthThreshold = 1600;
 
   headerBGDefault = "url('assets/header-background-chuck-cropped.jpg')";
-  headerBGs = [
+  headerBGsDefault = [
     "url('assets/header-background-chuck-cropped-glitch1.jpg')",
     "url('assets/header-background-chuck-cropped-glitch2.jpg')",
     "url('assets/header-background-chuck-cropped-glitch3.jpg')",
@@ -27,6 +25,31 @@ export class AppComponent {
     "url('assets/header-background-chuck-cropped-glitch5.jpg')",
     "url('assets/header-background-chuck-cropped-glitch6.jpg')"
   ];
+  headerBGHalf = "url('assets/header-background-chuck-cropped_half.jpg')";
+  headerBGsHalf = [
+    "url('assets/header-background-chuck-cropped-glitch1_half.jpg')",
+    "url('assets/header-background-chuck-cropped-glitch2_half.jpg')",
+    "url('assets/header-background-chuck-cropped-glitch3_half.jpg')",
+    "url('assets/header-background-chuck-cropped-glitch4_half.jpg')",
+    "url('assets/header-background-chuck-cropped-glitch5_half.jpg')",
+    "url('assets/header-background-chuck-cropped-glitch6_half.jpg')"
+  ];
+
+  headerBGCurrent: any;
+  headerBGsCurrent: any;
+
+  @HostListener("window:resize", ["$event"])
+  onResize(event) {
+    let width = event.target.innerWidth;
+    if (width > this.widthThreshold) {
+      this.headerBGCurrent = this.headerBGDefault;
+      this.headerBGsCurrent = this.headerBGsDefault;
+    } else {
+      this.headerBGCurrent = this.headerBGHalf;
+      this.headerBGsCurrent = this.headerBGsHalf;
+    }
+    this.headerBG.style.backgroundImage = this.headerBGCurrent;
+  }
 
   constructor(private wowService: NgwWowService) {}
 
@@ -35,7 +58,20 @@ export class AppComponent {
 
     this.headerBG = document.getElementById("header-background");
     this.headerBGswap = document.getElementById("header-background-swap");
-    this.headerBG.style.backgroundImage = this.headerBGDefault;
+
+    // Set initial default BG
+    this.headerBGCurrent =
+      window.innerWidth > this.widthThreshold
+        ? this.headerBGDefault
+        : this.headerBGHalf;
+
+    // Set initial swap BGs
+    this.headerBGsCurrent =
+      window.innerWidth > this.widthThreshold
+        ? this.headerBGsDefault
+        : this.headerBGsHalf;
+
+    this.headerBG.style.backgroundImage = this.headerBGCurrent;
 
     setTimeout(() => {
       this.glitch();
@@ -54,8 +90,8 @@ export class AppComponent {
   }
 
   async glitch() {
-    this.headerBGswap.style.backgroundImage = this.headerBGs[
-      Math.floor(Math.random() * this.headerBGs.length)
+    this.headerBGswap.style.backgroundImage = this.headerBGsCurrent[
+      Math.floor(Math.random() * this.headerBGsCurrent.length)
     ];
 
     await this.sleep(500);
