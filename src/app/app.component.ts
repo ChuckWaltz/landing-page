@@ -2,9 +2,6 @@ import { Component, HostListener } from "@angular/core";
 
 import { NgwWowService } from "ngx-wow";
 
-import "rxjs/add/observable/interval";
-import { I18nSelectPipe } from "@angular/common";
-
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -14,7 +11,7 @@ export class AppComponent {
   headerBG: any;
   headerBGswap: any;
 
-  widthThreshold = 1600;
+  widthThreshold = 1400;
 
   headerBGDefault = "url('assets/header-background-chuck-cropped.jpg')";
   headerBGsDefault = [
