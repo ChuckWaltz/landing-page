@@ -49,6 +49,7 @@ export class AppComponent {
       this.headerBGsCurrent = this.headerBGsHalf;
     }
     this.headerBG.style.backgroundImage = this.headerBGCurrent;
+    this.headerBGswap.style.backgroundImage = this.headerBGCurrent;
   }
 
   constructor(private wowService: NgwWowService) {}
