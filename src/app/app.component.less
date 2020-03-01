@@ -272,7 +272,7 @@ h3 {
   }
 
   #project-tiles-container {
-    max-width: 1600px;
+    max-width: 1800px;
     padding-top: 15vw;
     padding-bottom: 15vw;
   }
@@ -614,7 +614,8 @@ h3 {
       padding-left: 20px;
 
       .project-tile-inner {
-        height: 400px;
+        height: 35vh;
+        min-height: 450px;
 
         .project-tile-overlay {
           top: 0;
@@ -634,6 +635,28 @@ h3 {
     #contact-button {
       font-size: 26px;
     }
+  }
+}
+
+// XXL Devices
+@media (min-width: 2000px) {
+  #header {
+    #header-content {
+      h1 {
+        font-size: 102px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  h4 {
+    font-size: 28px;
   }
 }
 
