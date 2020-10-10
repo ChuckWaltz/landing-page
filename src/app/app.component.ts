@@ -49,6 +49,15 @@ export class AppComponent {
     this.headerBGswap.style.backgroundImage = this.headerBGCurrent;
   }
 
+  @HostListener("window:scroll", ["$event"])
+  onScroll(event) {
+    if(window.scrollY > 1000){
+      document.getElementById("header").style.opacity = "0";
+    }else{
+      document.getElementById("header").style.opacity = "1";
+    }
+  }
+
   constructor(private wowService: NgwWowService) {}
 
   ngOnInit() {
