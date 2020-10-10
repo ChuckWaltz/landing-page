@@ -11,17 +11,27 @@
       <a href=""><img src="assets/W Logo.svg" class="wow flipInY" /></a>
 
       <div id="nav-buttons-right">
-        <ul>
-          <a (click)="scrollTo('#about-section')">
-            <li class="wow slideInRight" data-wow-delay="6.5s">About</li>
-          </a>
-          <a (click)="scrollTo('#projects-section')">
-            <li class="wow slideInRight" data-wow-delay="6.75s">Projects</li>
-          </a>
-          <a (click)="scrollTo('#contact-section')">
-            <li class="wow slideInRight" data-wow-delay="7s">Contact</li>
-          </a>
-        </ul>
+        <div
+          class="navButton wow slideInRight"
+          data-wow-delay="6.5s"
+          (click)="scrollTo('#about-section')"
+        >
+          About
+        </div>
+        <div
+          class="navButton wow slideInRight"
+          data-wow-delay="6.75s"
+          (click)="scrollTo('#projects-section')"
+        >
+          Projects
+        </div>
+        <div
+          class="navButton wow slideInRight"
+          data-wow-delay="7s"
+          (click)="scrollTo('#contact-section')"
+        >
+          Contact
+        </div>
       </div>
     </div>
 

@@ -90,27 +90,19 @@ a {
       align-items: center;
       font-weight: normal;
 
-      ul {
-        margin: 0;
-        margin-left: 10px;
-        padding: 0;
+      .navButton {
+        color: @primary-color;
 
-        a {
-          color: @primary-color;
-        }
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0px 5px;
 
-        li {
-          display: inline-block;
-          margin-left: 20px;
-          font-size: 20px;
-          font-weight: normal;
-          padding: 0px 5px;
-
-          &:hover {
-            background-color: black;
-            color: white;
-            cursor: pointer;
-          }
+        &:hover {
+          background-color: @primary-color;
+          color: @secondary-color;
+          cursor: pointer;
         }
       }
     }
