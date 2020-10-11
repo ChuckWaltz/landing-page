@@ -76,6 +76,7 @@ a {
     padding-top: 5vw;
     display: flex;
     align-items: center;
+    z-index: 1000;
 
     img {
       max-width: 60px;
@@ -86,7 +87,6 @@ a {
     }
 
     #nav-buttons-right {
-      display: flex;
       align-items: center;
       font-weight: normal;
 
@@ -98,13 +98,12 @@ a {
         font-size: 20px;
         font-weight: normal;
         padding: 0px 5px;
-        z-index: 100;
+      }
 
-        &:hover {
-          background-color: @primary-color !important;
-          color: @secondary-color !important;
-          cursor: pointer;
-        }
+      .navButton:hover {
+        background-color: @primary-color !important;
+        color: @secondary-color !important;
+        cursor: pointer;
       }
     }
   }
