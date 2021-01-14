@@ -198,17 +198,15 @@ a {
   }
 
   #about-section-content-right {
-    padding: 7vw 10px;
-    max-width: 650px;
+    padding: 7vw;
+    max-width: 900px;
     margin-left: auto;
-    margin-right: 7vw;
 
     h3 {
       margin-top: 10px;
     }
 
     #icons-container {
-      max-width: 600px;
       margin: auto;
       padding: 0;
       .row {
@@ -216,7 +214,7 @@ a {
         margin-right: 0;
       }
       .col-3 {
-        padding: 12px;
+        padding: ~"min(2vw, 8px)";
       }
     }
 
@@ -489,7 +487,11 @@ a {
   }
 
   #about-section {
+    #about-section-content-left {
+      padding-right: 3.5vw;
+    }
     #about-section-content-right {
+      padding-left: 3.5vw;
       #about-button {
         font-size: 20px;
       }
@@ -588,6 +590,11 @@ a {
     #about-section-content-right {
       #about-button {
         font-size: 26px;
+      }
+      #icons-container {
+        .col-3 {
+          padding: ~"min(2vw, 12px)";
+        }
       }
     }
   }
